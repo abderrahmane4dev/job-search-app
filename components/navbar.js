@@ -1,5 +1,6 @@
 import img from "../assets/logo.png"
-
+import { useState } from "react";
+import {AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 export default function Navbar(){
   const navbar = [
@@ -8,19 +9,21 @@ export default function Navbar(){
     {name:"Candidate" , path:"#"}, 
 
   ]
+  const [open,setOpen]=useState(false);
 
     return (
 <> 
-<div className="flex bg-orange-100 md:px-16 py-3 items-center justify-between w-full"> 
+<div className="flex bg-orange-100 px-5 lg:px-16 py-3 items-center justify-between w-full"> 
 
-   <div className="text-left w-1/3"> 
+   <div className="text-left w-1/2 md:w-1/3"> 
     <img className="w-1/3"src={img.src}/> 
    </div>
-
-   <div className="md:flex hidden px-9  w-1/3"> 
-   <ul className="flex w-full"> 
+ 
+   <div className={`flex md:bg-transparent md:static bg-white w-full transition-all duration-500 ease-in absolute ${open ? 'top-20 left-0 ':'left-[-990px] top-20  '} md:w-1/3`}> 
+   
+   <ul className="flex md:flex-row items-center justify-center  flex-col w-full"> 
     {navbar.map((nav,index)=> 
-  <li className="px-5" key={index}> 
+  <li className="md:px-5  md:py-0 py-5 " key={index}> 
       <Link  href={`${nav.path}`}> 
       {nav.name}
       </Link>
@@ -32,10 +35,14 @@ export default function Navbar(){
    </ul>
 
    </div>
-   <div className="md:flex bg-sky-400 md:justify-center  w-1/3"> 
-  <a className="bg-red-400 py-2"> Login </a>
-  <button className="bg-orange-400 ml-3 text-white px-7 rounded-full py-2"> Sign up</button>
+   <div className={`flex md:flex-row flex-col items-center md:justify-end md:w-1/2 w-full md:static transition-all duration-500 ease-in absolute  ${open ? 'top-80  left-0 ':'left-[-990px] top-80'}`}> 
+  <a className=" py-2"> Login </a>
+  <button className="bg-orange-400 md:ml-3 text-white px-7 rounded-full py-2"> Sign up</button>
    </div>
+   <div onClick={()=>setOpen(!open)} className={`text-3xl   cursor-pointer z-20 md:hidden`}>
+    
+    <AiOutlineMenu className="text-black"/>
+     </div>
 </div>
 </>
     );
