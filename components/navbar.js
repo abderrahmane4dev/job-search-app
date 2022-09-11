@@ -35,7 +35,7 @@ export default function Navbar(){
    </ul>
 
    </div>
-   <div className={`flex md:flex-row flex-col items-center md:justify-end md:w-1/2 w-full md:static transition-all duration-500 ease-in absolute  ${open ? 'top-80  left-0 ':'left-[-990px] top-80'}`}> 
+   <div className={`flex md:flex-row flex-col items-center md:bg-transparent bg-white md:justify-end md:w-1/2 w-full md:static transition-all duration-500 ease-in absolute  ${open ? 'top-80  left-0 ':'left-[-990px] top-80'}`}> 
   <a className=" py-2"> Login </a>
   <button className="bg-orange-400 md:ml-3 text-white px-7 rounded-full py-2"> Sign up</button>
    </div>
