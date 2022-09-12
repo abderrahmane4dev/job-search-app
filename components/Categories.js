@@ -8,7 +8,7 @@ import CategoriesItem from "./CatItem"
 export default function Categories(){
     return(
         <> 
-        <div className="bg-orange-100 md:px-28 "> 
+        <div className="bg-orange-100 md:px-28 py-9 "> 
             <div className="text-center py-9">
             <h3 className="text-orange-400 "> 
             Choose Categories

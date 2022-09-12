@@ -5,6 +5,9 @@ import Navbar from '../components/navbar'
 import HeroSection from '../components/heroSection'
 import Sponsor from '../components/Sponsor'
 import Categories from '../components/Categories'
+import Profile from '../components/CreateProfile'
+import Finder from '../components/find'
+import Newsletter from '../components/newsletter'
 export default function Home() {
   return (
     <> 
@@ -19,6 +22,9 @@ export default function Home() {
      <HeroSection/>
      <Sponsor/>
      <Categories/>
+     <Profile/>
+     <Finder/>
+     <Newsletter/>
      </>
   )
 }
