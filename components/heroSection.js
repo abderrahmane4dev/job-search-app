@@ -4,7 +4,7 @@ import {BiMap,BiSearchAlt } from "react-icons/bi";
 export default function HeroSection(){
     return (
 <> 
-<div className="md:flex-row flex flex-col-reverse   bg-orange-100"> 
+<div className="md:flex-row flex flex-col-reverse pb-9   bg-orange-100"> 
     <div className="lg:pl-40 px-9 md:pt-32 w-full  md:w-2/3"> 
     <h1 className="text-5xl py-4 font-bold"> 
     Find the job of your <span className="text-orange-400">Dreams</span>
