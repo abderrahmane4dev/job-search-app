@@ -2,7 +2,7 @@ import Logo from "../assets/logo.png"
 export default function Footer(){
     return(
         <>
-        <div className="md:flex-row md:flex items-center justify-between flex-wrap flex-col  md:px-16 py-9 "> 
+        <div className="md:flex-row md:flex items-center justify-between flex-wrap flex-col  px-9 md:px-16 py-9 "> 
             <div className="md:w-1/4 w-full md:my-0 my-5 text-left"> 
                 <img className="w-40 py-4 "src={Logo.src}/>
                 <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.

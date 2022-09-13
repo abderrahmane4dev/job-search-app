@@ -29,7 +29,7 @@ export default function Navbar(){
     <img className="w-1/3"src={img.src}/> 
    </div>
  
-   <div className={`flex md:bg-transparent md:static bg-white w-full transition-all duration-500 ease-in absolute ${open ? 'top-20 left-0 ':'left-[-990px] top-20  '} md:w-1/3`}> 
+   <div className={`flex md:bg-transparent md:static bg-white font-semibold w-full transition-all duration-500 ease-in absolute ${open ? 'top-20 left-0 ':'left-[-990px] top-20  '} md:w-1/3`}> 
    
    <ul className="flex md:flex-row items-center justify-center  flex-col w-full"> 
     {navbar.map((nav,index)=> 
@@ -45,7 +45,7 @@ export default function Navbar(){
    </ul>
 
    </div>
-   <div className={`flex md:flex-row flex-col items-center md:bg-transparent bg-white md:justify-end md:w-1/2 w-full md:static transition-all duration-500 ease-in absolute  ${open ? 'top-80  left-0 ':'left-[-990px] top-80'}`}> 
+   <div className={`flex md:flex-row flex-col items-center md:py-0 py-5 font-semibold md:bg-transparent bg-white md:justify-end md:w-1/2 w-full md:static transition-all duration-500 ease-in absolute  ${open ? 'top-80  left-0 ':'left-[-990px] top-80'}`}> 
   <a className=" py-2"> Login </a>
   <button className="bg-orange-400 md:ml-3 text-white px-7 rounded-full py-2"> Sign up</button>
    </div>
