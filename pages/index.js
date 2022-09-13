@@ -8,6 +8,7 @@ import Categories from '../components/Categories'
 import Profile from '../components/CreateProfile'
 import Finder from '../components/find'
 import Newsletter from '../components/newsletter'
+import Footer from '../components/footer'
 export default function Home() {
   return (
     <> 
@@ -25,6 +26,7 @@ export default function Home() {
      <Profile/>
      <Finder/>
      <Newsletter/>
+     <Footer/>
      </>
   )
 }

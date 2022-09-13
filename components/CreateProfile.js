@@ -2,7 +2,7 @@ import ImageProfile from "../assets/profile.png"
 export default function Profile(){
     return(
         <> 
-        <div className="md:flex items-center md:px-9 bg-orange-100"> 
+        <div className="md:flex scroll-smooth hover:scroll-auto items-center md:px-9 bg-orange-100"> 
             <div className="md:w-1/2"> 
            <img src={ImageProfile.src}/>
             </div>
