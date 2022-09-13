@@ -19,7 +19,8 @@ export default function Navbar(){
           setColor(false)
         }
   }
- window.addEventListener("scroll",changeColor)
+  globalThis.window?.addEventListener("scroll",changeColor)
+ 
     return (
 <> 
 <div className={`flex fixed ${color ? 'bg-white text-orange-400 ' : 'bg-orange-100'} px-5 lg:px-16 py-3 items-center justify-between w-full`}> 

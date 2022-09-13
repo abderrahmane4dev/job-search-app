@@ -10,10 +10,10 @@ export default function Sponsor(){
             Join Most Well Known <span className="text-orange-400">Companies </span>Around The World
             </h1>
             <div className="flex justify-around  pt-16 flex-wrap md:flex-nowrap w-full"> 
-            <div  className="w-1/5 m-9">  <img  src={imgSponsor1.src}/></div>
-            <div  className="w-1/5 m-9 ">  <img src={imgSponsor2.src}/></div>
-            <div  className="w-1/5 m-9 ">  <img  src={imgSponsor3.src}/></div>
-            <div  className="w-1/5 m-9 ">  <img  src={imgSponsor4.src}/></div>
+            <div  className="w-1/5 md:p-5 m-9">  <img  src={imgSponsor1.src}/></div>
+            <div  className="w-1/5 md:p-5 m-9 ">  <img src={imgSponsor2.src}/></div>
+            <div  className="w-1/5 md:p-5 m-9 ">  <img  src={imgSponsor3.src}/></div>
+            <div  className="w-1/5 md:p-5 m-9 ">  <img  src={imgSponsor4.src}/></div>
          
                
               
