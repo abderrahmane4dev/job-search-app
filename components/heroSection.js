@@ -1,4 +1,5 @@
 import ImageJob1 from "../assets/image-hero.png"
+import Image from "next/image";
 import {BiMap,BiSearchAlt } from "react-icons/bi";
 
 export default function HeroSection(){
@@ -25,8 +26,14 @@ export default function HeroSection(){
    </div>
     </div>
 
-    <div className="w-full md:w-1/3 "> 
- <img className="py-4" src={ImageJob1.src} alt="image of hero section"/>
+    <div className="w-full  py-9 z-0 md:w-1/3 "> 
+    <Image
+        src={ImageJob1}
+        alt="Any Text"
+        layout="responsive"
+       
+      />
+      
     </div>
 </div>
 </>

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import imagejob from "../assets/work.png" 
 export default function Finder(){
     return(
@@ -19,7 +20,12 @@ export default function Finder(){
             </div>
             </div>
             <div className="md:w-1/2"> 
-               <img src={imagejob.src}/>
+            <Image
+        src={imagejob}
+        alt="Any Text"
+        layout="responsive"
+      />
+             
             </div>
         </div>
         </>

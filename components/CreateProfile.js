@@ -1,10 +1,15 @@
+import Image from "next/image"
 import ImageProfile from "../assets/profile.png"
 export default function Profile(){
     return(
         <> 
         <div className="md:flex scroll-smooth hover:scroll-auto items-center md:px-9 bg-orange-100"> 
             <div className="md:w-1/2"> 
-           <img src={ImageProfile.src}/>
+            <Image
+        src={ImageProfile}
+        alt="Any Text"
+        layout="responsive"
+      />
             </div>
             <div className="md:w-1/2 px-16"> 
             <h5 className="text-orange-400 py-4">Create Profile </h5>

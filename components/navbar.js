@@ -23,7 +23,7 @@ export default function Navbar(){
  
     return (
 <> 
-<div className={`flex fixed ${color ? 'bg-white text-orange-400 ' : 'bg-orange-100'} px-5 lg:px-16 py-3 items-center justify-between w-full`}> 
+<div className={`flex fixed ${color ? 'bg-white text-orange-400 ' : 'bg-orange-100'} px-5 lg:px-16 py-3 z-20 items-center justify-between w-full`}> 
 
    <div className="text-left w-1/2 md:w-1/3"> 
     <img className="w-1/3"src={img.src}/> 
